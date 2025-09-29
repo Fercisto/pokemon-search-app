@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #3b4cca;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#formulario {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokemon-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #e74c3c;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+#pokemon-input:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.2);
+}
+
+button[type="submit"] {
+    padding: 12px 25px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #c0392b;
+}
+
+#pokemon {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.pokemon-name {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pokemon-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pokemon-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #f8f9fa;
+    padding: 20px;
+    border: 4px solid #ffcc00;
+}
+
+.favorite-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.favorite-btn:hover {
+    background: #c0392b;
+}
+
+.stats-section,
+.abilities-section {
+    background: white;
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #3b4cca;
+    padding-bottom: 5px;
+}
+
+.stat-item {
+    background: #ecf0f1;
+    margin: 8px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #27ae60;
+    font-weight: 500;
+}
+
+.ability-item {
+    background: #ecf0f1;
+    margin: 8px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #f39c12;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+#favoritos {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+.favorites-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.favorite-pokemon {
+    background: #f8f9fa;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #ecf0f1;
+    border-color: #ffcc00;
+}
+
+.favorite-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: #ecf0f1;
+    padding: 8px;
+}
+
+.pokemon-nombre {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.remove-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: #c0392b;
+}
+
+.alerta {
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: bold;
+    max-width: 800px;
+    display: block;
+}
+
+.alerta-exito {
+    background: #2ecc71;
+}
+
+.alerta-error {
+    background: #e74c3c;
+}
+
+.empty-favorites {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 40px 20px;
+    font-size: 18px;
+}
+
+/* Layout responsivo */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #formulario {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #pokemon-input {
+        max-width: 100%;
+    }
+    
+    .pokemon-image {
+        width: 150px;
+        height: 150px;
+    }
+}
